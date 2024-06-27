@@ -1,0 +1,76 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  background-color: #01a89e;
+  width: 470px;
+  height: auto;
+  margin: 30px auto;
+  padding: 70px 50px;
+  color: #fffbff;
+}
+
+.input {
+  width: 400px;
+  border: 1px solid #fffbff;
+  border-radius: 20px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  background-color: #01a89e;
+  padding: 10px 20px;
+  color: #fffbff;
+  font-size: 20px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border: 2px solid #fffbff; /* Promijenite boju obruba na primjetniju nijansu crvene */
+  transition: border-color 0.5s ease-in-out;
+}
+
+::placeholder {
+  color: #fffbff;
+}
+
+.btn {
+  text-align: center;
+  margin: 15px auto;
+}
+.create-button {
+  padding: 8px 30px;
+  background-color: #fffbff;
+  color: #01a89e;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+}
+.create-button:hover {
+  cursor: pointer;
+}
+.create-button:disabled {
+  background-color: #737373bc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  border: none;
+  color: #fffbff;
+}
+a {
+  color: #fffbff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.first-box {
+  width: 470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

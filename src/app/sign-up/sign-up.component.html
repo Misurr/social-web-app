@@ -1,0 +1,104 @@
+<div class="container">
+  <form [formGroup]="signUpForm" (ngSubmit)="addUser()">
+    <div>
+      <label for="name">Name:</label><br />
+      <div class="input-with-icon">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="name"
+          class="input"
+          formControlName="first_name"
+        /><br />
+      </div>
+    </div>
+    <div>
+      <label for="last-name">Last Name:</label><br />
+      <div class="input-with-icon">
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="last name"
+          class="input"
+          formControlName="last_name"
+        /><br />
+      </div>
+    </div>
+    <div>
+      <label for="email">E - mail:</label><br />
+      <div class="input-with-icon">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email"
+          class="input"
+          formControlName="email"
+        /><br />
+      </div>
+    </div>
+
+    <div>
+      <label for="username">Username:</label><br />
+      <div class="input-with-icon">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="username"
+          class="input"
+          formControlName="username"
+        /><br />
+      </div>
+    </div>
+
+    <div>
+      <label for="password">Password:</label><br />
+      <div class="input-with-icon">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+          class="input"
+          formControlName="password"
+        /><br />
+      </div>
+    </div>
+    <div>
+      <label for="password">Repeat password:</label><br />
+      <div class="input-with-icon">
+        <input
+          type="password"
+          id="repeatPassword"
+          name="password"
+          placeholder=" repeat password"
+          class="input"
+          formControlName="repeatPassword"
+        /><br />
+      </div>
+    </div>
+
+    <div class="btn">
+      <button
+        type="submit"
+        class="create-button"
+        [disabled]="!signUpForm.valid"
+      >
+        CREATE ACCOUNT
+      </button>
+    </div>
+    <div class="first-box">
+      <div>
+        <a [routerLink]="'/log-in'"
+          ><i class="fa-solid fa-backward"></i> BACK</a
+        >
+      </div>
+      <div>
+        <a href="#">Need help?</a>
+      </div>
+    </div>
+  </form>
+</div>

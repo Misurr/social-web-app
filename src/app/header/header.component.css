@@ -1,0 +1,85 @@
+.mat-toolbar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo-img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.icon-wrapper {
+  margin-right: 15px;
+}
+
+.mat-toolbar button {
+  margin-left: 10px;
+}
+
+.spacer {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+input {
+  width: 350px;
+  height: 20px;
+  padding: 5px;
+  color: gray;
+  font-size: 18px;
+  border: none;
+}
+
+i {
+  color: grey;
+}
+.img-container {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* .user-image {
+  height: 75px;
+  border-radius: 100%;
+  margin-left: 15px;
+} */
+.dots-container {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+button:hover,
+.logo-img:hover,
+.user-image:hover,
+.dots-container:hover {
+  cursor: pointer;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.user-image:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

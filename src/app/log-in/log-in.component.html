@@ -1,0 +1,79 @@
+<div class="container">
+  <form [formGroup]="logInForm" (ngSubmit)="ispis()">
+    <div>
+      <label for="username">Username:</label><br />
+      <div class="input-with-icon">
+        <i class="far fa-user"></i>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="username"
+          class="input"
+          formControlName="username"
+        /><br />
+      </div>
+    </div>
+
+    <div>
+      <label for="password">Password:</label><br />
+      <div class="input-with-icon">
+        <i class="fa-solid fa-lock"></i>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+          class="input"
+          formControlName="password"
+        /><br />
+      </div>
+    </div>
+
+    <div>
+      <button
+        type="submit"
+        [disabled]="!logInForm.valid"
+        value="LOGIN"
+        class="login-button"
+        [routerLink]="'/homepage'"
+      >
+        LOGIN
+      </button>
+    </div>
+
+    <div class="first-box">
+      <div class="second-box">
+        <div>
+          <input
+            type="checkbox"
+            id="remember"
+            name="remember"
+            value="remember"
+            class="checkbox-square"
+          />
+        </div>
+        <div>
+          <label for="remember" class="checkbox-text">Remember me</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div>
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+
+    <div class="btn">
+      <a [routerLink]="'/sign-up'" class="create-button"> CREATE ACCOUNT</a>
+    </div>
+    <div class="first-box">
+      <div>
+        <a href="#">Privacy policy</a>
+      </div>
+      <div>
+        <a href="#">Need help?</a>
+      </div>
+    </div>
+  </form>
+</div>

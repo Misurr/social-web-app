@@ -1,0 +1,195 @@
+{
+  "uuid": "e86f0ad4-0eb0-469f-9e07-6e48a34717f6",
+  "lastMigration": 32,
+  "name": "Users",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "714eb2d2-ae26-4b22-8e1f-badbe0d9eac8",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users",
+      "responses": [
+        {
+          "uuid": "1bd314b1-7f97-43df-bc12-8a8071371775",
+          "body": "[\r\n  {\"id\": 1,\r\n  \"first_name\": \"Djuro\",\r\n  \"last_name\": \"Djuric\",\r\n  \"email\": \"djuro@mejl.com\",\r\n  \"username\": \"djuro123\",\r\n},\r\n{ \"id\" : 2,\r\n  \"first_name\": \"Marko\",\r\n  \"last_name\": \"Markovic\",\r\n  \"email\": \"marko@mejl.com\",\r\n  \"username\": \"Marko123\",\r\n},\r\n{ \"id\" : 3,\r\n  \"first_name\": \"Filip\",\r\n  \"last_name\": \"Filipovic\",\r\n  \"email\": \"filip@mejl.com\",\r\n  \"username\": \"Filip123\",\r\n},\r\n{ \"id\" : 4,\r\n  \"first_name\": \"Petar\",\r\n  \"last_name\": \"Petrovic,\r\n  \"email\": \"petarmejl.com\",\r\n  \"username\": \"Pero123\",\r\n},\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "73e505f0-7326-4853-afeb-350979ec10c8",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "user",
+      "responses": [
+        {
+          "uuid": "b6963124-f102-4984-a87f-c329a10c02a9",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "33a68de0-c08f-40f4-9192-7fd6b21f4799",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "user/:id",
+      "responses": [
+        {
+          "uuid": "f65609f5-3e94-43a8-a73f-c85a6d807547",
+          "body": "[\r\n  {\"id\": 1,\r\n  \"first_name\": \"Djuro\",\r\n  \"last_name\": \"Djuric\",\r\n  \"email\": \"djuro@mejl.com\",\r\n  \"username\": \"djuro123\",\r\n},\r\n{ \"id\" : 2,\r\n  \"first_name\": \"Marko\",\r\n  \"last_name\": \"Markovic\",\r\n  \"email\": \"marko@mejl.com\",\r\n  \"username\": \"Marko123\",\r\n},\r\n{ \"id\" : 3,\r\n  \"first_name\": \"Filip\",\r\n  \"last_name\": \"Filipovic\",\r\n  \"email\": \"filip@mejl.com\",\r\n  \"username\": \"Filip123\",\r\n},\r\n{ \"id\" : 4,\r\n  \"first_name\": \"Petar\",\r\n  \"last_name\": \"Petrovic,\r\n  \"email\": \"petarmejl.com\",\r\n  \"username\": \"Pero123\",\r\n},\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "888801b7-c9da-4fdd-aee6-a5a86bac5205",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "user",
+      "responses": [
+        {
+          "uuid": "3b281e53-a0d3-4bae-8e0a-4fd88de7839c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "714eb2d2-ae26-4b22-8e1f-badbe0d9eac8"
+    },
+    {
+      "type": "route",
+      "uuid": "73e505f0-7326-4853-afeb-350979ec10c8"
+    },
+    {
+      "type": "route",
+      "uuid": "33a68de0-c08f-40f4-9192-7fd6b21f4799"
+    },
+    {
+      "type": "route",
+      "uuid": "888801b7-c9da-4fdd-aee6-a5a86bac5205"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "",
+      "value": ""
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

@@ -1,0 +1,27 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+.friend-container {
+  font-family: "REM", sans-serif;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.my-friend-card {
+  max-width: 150px;
+  margin: 20px;
+}
+
+mat-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+mat-card {
+  transition: transform 0.2s;
+}
+
+.sort-dropdown {
+  margin-left: 20px;
+}

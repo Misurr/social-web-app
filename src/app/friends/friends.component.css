@@ -1,0 +1,40 @@
+.friend-container {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.img-container {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+mat-list-item {
+  width: 200px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #363636;
+  margin-left: 20px;
+}
+.dots {
+  margin-right: 20px;
+  font-size: 10px;
+}
+
+h2 {
+  margin-left: 20px;
+  color: #01a89e;
+}
+
+mat-list-item:hover {
+  color: #363636b0;
+  cursor: pointer;
+}

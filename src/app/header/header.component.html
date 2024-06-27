@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <img
+    src="/assets/images/logo.png"
+    alt="Logo"
+    class="logo-img"
+    routerLink="/homepage"
+  />
+  <span class="spacer"></span>
+  <!-- <mat-form-field class="search-field"> -->
+  <span class="icon-wrapper">
+    <i class="fa-solid fa-magnifying-glass search-field"></i>
+  </span>
+  <input matInput placeholder="Search friends, groups and posts" />
+  <!-- </mat-form-field> -->
+  <span class="spacer"></span>
+  <button mat-button routerLink="/">
+    <i class="fa-regular fa-message"></i>
+  </button>
+  <button mat-button routerLink="/">
+    <i class="fa-regular fa-bell"></i>
+  </button>
+  <div class="img-container">
+    <img src="/assets/images/user-4.jpg" class="user-image" />
+  </div>
+
+  <div class="dots-container">
+    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+  </div>
+</mat-toolbar>
