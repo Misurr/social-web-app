@@ -30,6 +30,8 @@ import { SettingsComponent } from './menu-components/settings/settings.component
 import { MatGridList, MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MessageComponent } from './menu-components/messages/message/message.component';
+import { MessagesListComponent } from './menu-components/messages/messages-list/messages-list.component';
+import { UserInfoComponent } from './menu-components/messages/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import { MessageComponent } from './menu-components/messages/message/message.com
     GroupsComponent,
     SettingsComponent,
     MessageComponent,
+    MessagesListComponent,
+    UserInfoComponent,
   ],
   imports: [
     BrowserModule,

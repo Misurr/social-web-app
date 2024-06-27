@@ -1,0 +1,41 @@
+mat-list-item {
+  margin-bottom: 10px;
+  width: 95%;
+  /* background-color: lightgray; */
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+mat-list-item:hover {
+  background-color: white;
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #01a89e;
+  padding: 5px 0;
+  color: white;
+}
+mat-list-item:hover p {
+  color: white;
+}
+p {
+  font-size: 12px;
+  color: gray;
+}
+.container {
+  height: 600px;
+  overflow-y: auto;
+}
+.container::-webkit-scrollbar {
+  width: 15px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 100px;
+}

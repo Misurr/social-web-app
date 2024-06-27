@@ -17,20 +17,5 @@
   margin: 0 5px;
   /* background-color: lightcoral; */
 }
-mat-list-item {
-  margin-bottom: 10px;
-  width: 100%;
-  /* background-color: lightgray; */
-  font-size: 18px;
-  padding: 5px 0;
-}
 
-mat-list-item:hover {
-  background-color: white;
-  cursor: pointer;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #01a89e;
-  padding: 5px 0;
-  color: white;
-}
+
