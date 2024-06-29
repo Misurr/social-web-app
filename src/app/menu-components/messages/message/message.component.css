@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  overflow-y: scroll;
+}
+.message {
+  max-width: 70%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.friend {
+  align-self: flex-start;
+  background-color: #d1e7dd; /* Boja pozadine za prijateljeve poruke */
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #0d6efd; /* Boja pozadine za moje poruke */
+  color: white; /* Boja teksta za moje poruke */
+}
+
+.input-message {
+  width: 100%;
+  height: 22%;
+  background-color: aqua;
+}
