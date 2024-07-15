@@ -18,3 +18,7 @@
   margin: 0 5px;
   /* background-color: lightcoral; */
 }
+
+.user-info{
+  position: relative;
+}
