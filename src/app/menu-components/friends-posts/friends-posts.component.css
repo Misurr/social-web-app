@@ -80,12 +80,14 @@ i:hover {
 }
 
 .status-container,
-.image-container {
+.image-container,
+.video-container {
   width: 99%;
   height: auto;
   margin-bottom: 20px;
   background-color: white;
-  border-bottom: 3px solid #01a89e;
+  border: 3px solid #01a89e;
+  border-radius: 10px;
 }
 .user-info {
   height: auto;
@@ -159,6 +161,18 @@ h4 {
 }
 
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
+
+.video {
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #01a89e;
+}
+video {
   display: block;
   margin-left: auto;
   margin-right: auto;
