@@ -136,7 +136,7 @@ i {
 input[type="text"]:focus,
 input[type="password"]:focus {
   outline: none;
-  border: 2px solid #fffbff; /* Promijenite boju obruba na primjetniju nijansu crvene */
+  border: 2px solid #fffbff; 
   transition: border-color 0.5s ease-in-out;
 }
 

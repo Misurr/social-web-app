@@ -1,10 +1,31 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 135px);
+  overflow-y: auto;
+}
+.container::-webkit-scrollbar {
+  width: 15px;
+  display: none;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 100px;
+}
+
 .friend-container {
-  width: 300px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 40px 0;
 }
+
 .img-container {
   width: 55px;
   height: 55px;
@@ -34,7 +55,8 @@ h2 {
   color: #01a89e;
 }
 
-mat-list-item:hover {
+.friend-container:hover .user-image,
+.friend-container:hover mat-list-item {
   color: #363636b0;
   cursor: pointer;
 }

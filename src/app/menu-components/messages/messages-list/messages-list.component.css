@@ -12,7 +12,7 @@ mat-list-item:hover {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #01a89e;
-  padding: 5px 0;
+  /* padding: 5px 0; */
   color: white;
 }
 mat-list-item:hover p {
@@ -23,11 +23,11 @@ p {
   color: gray;
 }
 .container {
-  height: 600px;
+  height: calc(100vh - 150px);
   overflow-y: auto;
 }
 .container::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 
 .container::-webkit-scrollbar-track {
@@ -39,3 +39,4 @@ p {
   background-color: lightgray;
   border-radius: 100px;
 }
+
