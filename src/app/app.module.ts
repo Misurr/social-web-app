@@ -32,6 +32,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MessageComponent } from './menu-components/messages/message/message.component';
 import { MessagesListComponent } from './menu-components/messages/messages-list/messages-list.component';
 import { UserInfoComponent } from './menu-components/messages/user-info/user-info.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { UserInfoComponent } from './menu-components/messages/user-info/user-inf
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
