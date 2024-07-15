@@ -79,12 +79,13 @@ i:hover {
   font-size: 20px;
 }
 
-.status-container {
+.status-container,
+.image-container {
   width: 99%;
   height: auto;
+  margin-bottom: 20px;
   background-color: white;
   border-bottom: 3px solid #01a89e;
-
 }
 .user-info {
   height: auto;
@@ -115,7 +116,51 @@ h4 {
   font-weight: 200;
 }
 
-.status{
+.status {
   padding: 20px;
   color: #878f9d;
+  border-bottom: 3px solid #01a89e;
+}
+.reactions {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.reactions i {
+  font-size: 30px;
+}
+
+.reactions .fa-heart {
+  color: #ff000086;
+}
+.reactions .fa-heart:hover {
+  color: #ff0000be;
+}
+
+.reactions .fa-heart-circle-xmark {
+  color: #ff6a0088;
+}
+.reactions .fa-heart-circle-xmark:hover {
+  color: #ff6a00e7;
+}
+
+.reactions .fa-comment {
+  color: #0077ff82;
+}
+
+.reactions .fa-comment:hover {
+  color: #0077ffec;
+}
+
+.image {
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #01a89e;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
 }
