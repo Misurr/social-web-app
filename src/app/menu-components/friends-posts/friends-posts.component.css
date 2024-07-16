@@ -4,6 +4,7 @@
   /* margin: 0 auto; */
   padding: 20px;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .img-container {
   width: 55px;
@@ -31,6 +32,7 @@ input {
   border-radius: 90px;
   font-size: 20px;
   border: white solid 1px;
+  margin-left: 10px;
 }
 input::placeholder {
   color: white;
@@ -44,7 +46,7 @@ input[type="text"]:focus {
 
 hr {
   color: white;
-  height: 3px;
+  height: 1px;
   border-width: 0;
   background-color: white;
 }
@@ -86,7 +88,8 @@ i:hover {
   height: auto;
   margin-bottom: 20px;
   background-color: white;
-  border: 3px solid #01a89e;
+  border-bottom: 4px solid #01a89e;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
 }
 .user-info {
@@ -121,7 +124,7 @@ h4 {
 .status {
   padding: 20px;
   color: #878f9d;
-  border-bottom: 3px solid #01a89e;
+  border-bottom: 2px solid #01a89e;
 }
 .reactions {
   padding: 10px 20px;
@@ -154,27 +157,16 @@ h4 {
   color: #0077ffec;
 }
 
-.image {
-  margin: 0 auto;
-  padding-bottom: 5px;
-  border-bottom: 3px solid #01a89e;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 500px;
-}
-
+.image,
 .video {
-  margin: 0 auto;
   padding-bottom: 5px;
-  border-bottom: 3px solid #01a89e;
+  border-bottom: 2px solid #01a89e;
 }
+
+img,
 video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  width: 80%;
 }
