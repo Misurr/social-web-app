@@ -1,0 +1,8 @@
+<div *ngIf="mediaSrc" class="fullscreen-media" (click)="closeMedia()">
+    <img *ngIf="mediaType === 'image'" [src]="mediaSrc" alt="Full size image" />
+    <video *ngIf="mediaType === 'video'" controls autoplay>
+      <source [src]="mediaSrc" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  

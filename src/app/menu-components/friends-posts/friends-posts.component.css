@@ -106,7 +106,6 @@ i:hover {
   display: flex;
   gap: 30px;
   align-items: center;
-  
 }
 
 h3,
@@ -164,10 +163,16 @@ h4 {
   border-bottom: 2px solid #01a89e;
 }
 
-img,
-video {
+video,
+.image-post {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  max-width: 50%;
+  cursor: pointer;
+}
+
+.description {
+  padding: 20px;
+  color: #878f9d;
 }

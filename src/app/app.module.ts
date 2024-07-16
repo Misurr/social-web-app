@@ -33,6 +33,7 @@ import { MessageComponent } from './menu-components/messages/message/message.com
 import { MessagesListComponent } from './menu-components/messages/messages-list/messages-list.component';
 import { UserInfoComponent } from './menu-components/messages/user-info/user-info.component';
 import { MatInputModule } from '@angular/material/input';
+import { FullscreenMediaComponent } from './menu-components/fullscreen-media/fullscreen-media.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { MatInputModule } from '@angular/material/input';
     MessageComponent,
     MessagesListComponent,
     UserInfoComponent,
+    FullscreenMediaComponent,
   ],
   imports: [
     BrowserModule,

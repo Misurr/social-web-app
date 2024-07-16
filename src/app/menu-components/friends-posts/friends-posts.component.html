@@ -1,3 +1,11 @@
+<app-fullscreen-media
+  *ngIf="selectedMediaSrc && selectedMediaType"
+  [mediaSrc]="selectedMediaSrc"
+  [mediaType]="selectedMediaType"
+  (close)="closeMedia()"
+>
+</app-fullscreen-media>
+
 <div class="write-status-container">
   <form>
     <div class="img-container">
@@ -7,7 +15,6 @@
     <button type="submit" class="send-icon-button">
       <i class="fa-regular fa-paper-plane"></i>
     </button>
-
   </form>
   <hr />
   <div class="icon-container">
@@ -70,8 +77,16 @@
       <i class="fa-regular fa-rectangle-xmark"></i>
     </div>
   </div>
+
+  <div class="description">
+    <p>This is some description...</p>
+  </div>
   <div class="image">
-    <img src="/assets/images/user-8.jpg" />
+    <img
+      src="/assets/images/user-8.jpg"
+      (click)="openMedia('/assets/images/user-8.jpg', 'image')"
+      class="image-post"
+    />
   </div>
   <div class="reactions">
     <div>
@@ -98,7 +113,14 @@
     </div>
   </div>
   <div class="video">
-    <video controls autoplay muted>
+    <div class="description">
+      <p>This is some description...</p>
+    </div>
+    <video
+      controls
+      muted
+      (click)="openMedia('/assets/videos/balerina.mp4', 'video')"
+    >
       <source src="/assets/videos/balerina.mp4" />
     </video>
   </div>
@@ -164,9 +186,52 @@
     </div>
   </div>
   <div class="video">
-    <video controls autoplay muted>
+    <div class="description">
+      <p>This is some description...</p>
+    </div>
+    <video
+      controls
+      autoplay
+      muted
+      (click)="openMedia('/assets/videos/balerina2.mp4', 'video')"
+    >
       <source src="/assets/videos/balerina2.mp4" />
     </video>
+  </div>
+  <div class="reactions">
+    <div>
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-heart-circle-xmark"></i>
+    </div>
+    <i class="fa-solid fa-comment"></i>
+  </div>
+</div>
+
+<div class="image-container">
+  <div class="user-info">
+    <div class="user-info-container">
+      <div class="img-container">
+        <img src="/assets/images/user-8.jpg" class="user-image" />
+      </div>
+      <div class="user-name">
+        <h3>Jane Doe</h3>
+        <h4>8 hours ago</h4>
+      </div>
+    </div>
+    <div class="hide-post">
+      <i class="fa-regular fa-rectangle-xmark"></i>
+    </div>
+  </div>
+
+  <div class="description">
+    <p>This is some description...</p>
+  </div>
+  <div class="image">
+    <img
+      src="/assets/images/nature.webp"
+      (click)="openMedia('/assets/images/nature.webp', 'image')"
+      class="image-post"
+    />
   </div>
   <div class="reactions">
     <div>
