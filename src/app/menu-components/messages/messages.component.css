@@ -3,22 +3,27 @@
 .container {
   width: 100%;
   display: flex;
+
+  position: relative;
+  top: 110px;
+  height: calc(100vh - 100px);
 }
 
 .message {
-  width: 50%;
+  width: 60%;
   margin: 0 20px;
   border-radius: 10px;
-  height: calc(100vh - 150px);
+
 }
 
 .messages-list,
 .user-info {
-  width: 25%;
+  width: 15%;
   margin: 0 5px;
   /* background-color: lightcoral; */
 }
 
 .user-info{
   position: relative;
+  width: 25%;
 }
