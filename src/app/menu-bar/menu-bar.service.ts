@@ -5,7 +5,6 @@ import { MenuBar } from './menu-bar.model';
   providedIn: 'root',
 })
 export class MenuBarService {
-  
   menuBarItems: Array<MenuBar> = [
     { name: 'My Friends', icon: 'fa-solid fa-users-line' },
     { name: 'Messages', icon: 'fa-regular fa-message' },
