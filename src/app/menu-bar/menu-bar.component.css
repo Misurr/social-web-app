@@ -30,7 +30,8 @@ mat-list-item {
   margin-right: 40px;
 }
 
-mat-list-item:hover {
+mat-list-item:hover,
+.colored {
   background-color: white;
   cursor: pointer;
   border-top-right-radius: 15px;
